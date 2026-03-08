@@ -132,11 +132,14 @@ const species = [
                 fish.primary && "ring-2 ring-sunset/40",
               ]}
             >
-              <img
-                src={fish.image}
-                alt={fish.name}
-                class="h-40 w-full object-cover"
-              />
+              <div class="relative h-52 overflow-hidden">
+                <img
+                  src={fish.image}
+                  alt={fish.name}
+                  class="h-full w-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
               <div class="p-5">
                 <div class="flex items-center gap-2 mb-2">
                   <h3 class="font-heading text-lg font-bold text-forest">
